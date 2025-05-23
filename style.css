@@ -121,10 +121,8 @@ h4 {
     gap: 0.5rem;
     height: min-content;
     justify-content: center;
-    overflow: hidden;
     padding: 0;
     position: relative;
-    width: 1px;
 }
 
 .work {
@@ -326,4 +324,44 @@ h4 {
 
 .items-header-div:hover a h3 {
     color: var(--text-secondary);
+}
+
+@media only screen and (max-width: 768px) {
+    .workdisplay {
+        flex-direction: column; 
+    }
+
+    .topbar-item:nth-child(2) {
+        display: none;
+    }
+
+    .topbar-item:nth-child(3) {
+        align-items: flex-end;
+        margin-right: 1rem;
+    }
+
+    .items-container {
+        flex-direction: column;
+    }
+
+    .items-wrapper{
+        position: static;
+        width: 100%;
+    }
+    .items-content{
+        width: 90%;
+    }
+
+    .items-content-info {
+        flex-direction: column;
+    }
+
+    .items-content-info-A {
+        width: 100%;
+    }
+
+    .items-content-info-B {
+        width: 100%;
+        margin-left: 0;
+    }
 }
