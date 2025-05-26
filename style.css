@@ -343,9 +343,18 @@ h4 {
     height: 100%;
 }
 
+@media only screen and (max-width: 479px){
+
+}
+
 @media only screen and (max-width: 768px) {
+    
     .workdisplay {
         flex-direction: column; 
+    }
+
+    .topbar-item:nth-child(1) {
+        flex: 1.5 0 0px;;
     }
 
     .topbar-item:nth-child(2) {
