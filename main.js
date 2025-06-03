@@ -94,3 +94,14 @@ for(var i = 0; i <Topic1.length; i++) {
      })
   })(i);
 }
+
+var Topic8 = document.getElementsByClassName('topic8');
+var Topic8Reveal = document.getElementById('item8-info');
+
+for(var i = 0; i <Topic1.length; i++) {
+  (function(index) {
+    Topic8[index].addEventListener("click", function() {
+      Topic8Reveal.classList.toggle('show2');
+     })
+  })(i);
+}
