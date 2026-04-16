@@ -8,472 +8,413 @@
     <meta name="keywords" content="Graphic Design, Web Development, Portfolio">
     <meta name="author" content="Yosapat Limruangrong">
     <title>YosapatLim | Designer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        @font-face {
+            font-family: 'EN-Font';
+            src: url('./assets/fonts/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 100 900;
+        }
+    </style>
 </head>
-<body>
-    <div id="item-details" class="hidden lenis">
-        <section id="itemBack" class="item-back" onclick="removeClassFromOneElement()">
-            <div class="back-wrapper" >
-                <h2>Close</h2>
-                <img class="back-close" src="img/Close-Icon.svg">
+<body id="top">
+    <header>
+        <div class="gnav">
+            <nav class="gnav__inner">
+                <h1 class="gnav__item gnav__title">Yosapat Limruangrong</h1>
+                <p class="gnav__item gnav__text1">Web Developer / Designer</p>
+                <p class="gnav__item gnav__text2">Chonburi, Thailand</p>
+                <div class="gnav__exit" data-item-close>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <polygon points="100 18.73 81.27 0 50 31.27 18.73 0 0 18.73 31.27 50 0 81.27 18.73 100 50 68.73 81.27 100 100 81.27 68.73 50 100 18.73"/>
+                    </svg>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="fullWrap">
+        <div class="sticky-sentinel"></div>
+        <section id="webdev" class="webdev sections">
+            <div class="webdev__inner">
+                <h2 class="webdev__title">Website Development</h2>
+                <div class="webdev__content">
+                    <div class="base__col">
+                        <div class="webdev__item base__item js-slide" data-webdev="1">
+                            <h2 class="webdev__catch">Aegis Property Website</h2>
+                            <p>Real Estate Listing</p>
+                            <div class="base__img">
+                                <video src="img/w01-aegis/aegis.mp4" preload="auto" loop="" autoplay muted></video>
+                            </div>
+                        </div>
+                        <div class="webdev__item base__item js-slide" data-webdev="2">
+                            <h2 class="webdev__catch">Global Top Group Website</h2>
+                            <p>Company Website</p>
+                            <div class="base__img"><img src="./img/w02-gtg/webdev5-thumb.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="base__col">
+                        <div class="webdev__item base__item js-slide" data-webdev="3">
+                            <h2 class="webdev__catch">Global Top Group</h2>
+                            <p>Interactive Presentation</p>
+                            <div class="base__img"><img src="./img/w03-map/webdev3-thumb.jpg" alt=""></div>
+                        </div>
+                        <div class="webdev__item base__item js-slide" data-webdev="4">
+                            <h2 class="webdev__catch">Marina Golden Bay</h2>
+                            <p>Landing Page</p>
+                            <div class="base__img">
+                                <video src="img/w04-mgb/mgb.mp4" preload="auto" loop="" autoplay muted></video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="base__col">
+                        <div class="webdev__item base__item js-slide" data-webdev="5">
+                            <h2 class="webdev__catch">HoYostans</h2>
+                            <p>Web Design/Management</p>
+                            <div class="base__img">
+                                <video src="img/vid2.mp4" preload="auto" loop="" autoplay muted>
+                            </div>
+                        </div>
+                        <div class="webdev__item base__item js-slide" data-webdev="6">
+                            <h2 class="webdev__catch">Project InSight</h2>
+                            <p>Campaign Website</p>
+                            <div class="base__img">
+                                <video src="img/w06-ins/vid3.mp4" preload="auto" loop="" autoplay muted>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </section>
-        <section class="item-content">
-          <article id="item1-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1>HQ BMTC</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">อุตสาหกรรมทหาร</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Defense</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">นักออกเเบบ</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Lead Designer</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">อัตลักษณ์เเบรนด์</h4>
-                            <h4 class="th">ทิศทางเเละภาพลักษณ์เเบรนด์</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Brand Identity</h4>
-                            <h4 class="en">Creative Direction</h4>
+        <section id="seo" class="seo sections">
+            <div class="seo__inner">
+                <h2 class="seo__title">Search Engine Optimization</h2>
+                <div class="seo__content">
+                    <div class="base__col">
+                        <div class="seo__item base__item js-slide" data-seo="1">
+                            <h2 class="seo__catch">Global Top Group</h2>
+                            <div class="base__img"><img src="./img/s01-gtg/s1-gtg1.jpg" alt=""></div>
                         </div>
                     </div>
-                </div>
-                <div class="items-content">
-                    <div class="items-content-info">
-                        <div class="items-content-info-A">
-                            <h2 class="th">
-                                เสื้อเพื่อความกลมเกลียว
-                            </h2>
-                            <h2 class="en">
-                                Shirt for unity
-                            </h2>
-                        </div>
-                        <div class="items-content-info-B">
-                            <h4 class="th">
-                                ออกเเบบสัญลักษณ์บนเสื้อหลายเเบบเพื่อส่งเสริมความกลมเกลียวใน HQ BMTC ของกองทัพสิงค์โปร
-                            </h4>
-                            <h4 class="en">
-                                Led the design of the shirt for Singapore's HQ BMTC 9th Infantry Division.
-                            </h4>
+                    <div class="base__col">
+                        <div class="seo__item base__item js-slide" data-seo="2">
+                            <h2 class="seo__catch">Viva Wellness</h2>
+                            <div class="base__img"><img src="./img/s02-viva/viva-thumb.jpg" alt=""></div>
                         </div>
                     </div>
-                    <img class="projectimg" src="img/sdf1.png">
-                    <img class="projectimg" src="img/sdf2.jpg">
+                    <div class="base__col"></div>
                 </div>
             </div>
-          </article>
-          <article id="item2-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1>Villa Forest</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">อสังหาริมทรัพย์</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Real Estate</h4>
+        </section>
+        <section id="graphic" class="graphic sections">
+            <div class="graphic__inner">
+                <h2 class="graphic__title">Graphic Design and Video</h2>
+                <div class="graphic__content">
+                    <div class="base__col">
+                        <div class="graphic__item base__item js-slide" data-graphic="1">
+                            <h2 class="graphic__catch">Studio SYNKAI</h2>
+                            <p>Artwork and Graphic Creation</p>
+                            <div class="base__img"><img src="./img/w2.jpg" alt=""></div>
                         </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">ตัดต่อวิดีโอ/โมชั่นกราฟิก</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Video Editor/Motion Graphic</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">ตัดต่อวิดีโอ</h4>
-                            <h4 class="th">โมชั่นกราฟิก</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Video Editing</h4>
-                            <h4 class="en">Motion Graphic</h4>
+                        <div class="graphic__item base__item js-slide" data-graphic="2">
+                            <h2 class="graphic__catch">Potato Almanac</h2>
+                            <p>Video Content Creation</p>
+                            <div class="base__img"><img src="./img/g02-pa/pa1.jpg" alt=""></div>
                         </div>
                     </div>
-                </div>
-                <div class="items-content">
-                    <div class="projectvid">
-                        <iframe src="https://drive.google.com/file/d/1o_y7jFyxnItuIg8jo5Qn5bRic3o4w0-4/preview"></iframe>
+                    <div class="base__col">
+                        <div class="graphic__item base__item js-slide" data-graphic="3">
+                            <h2 class="graphic__catch">Danfit Offshore</h2>
+                            <p>Logo Design</p>
+                            <div class="base__img"><img src="./img/g03-dd/dd-thumb.jpg" alt=""></div>
+                        </div>
+                        <div class="graphic__item base__item js-slide" data-graphic="4">
+                            <h2 class="graphic__catch">Villa Forest</h2>
+                            <p>Video Motion Graphic</p>
+                            <p></p>
+                            <div class="base__img">
+                                <video src="img/vid1.mp4" preload="auto" loop="" autoplay muted></video>
+                            </div>
+                        </div>
+                        <div class="graphic__item base__item js-slide" data-graphic="5">
+                            <h2 class="graphic__catch">Prasae Old Village Community Enterprise</h2>
+                            <p>Logo Design</p>
+                            <div class="base__img"><img src="./img/g05-prasae/uni2.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="base__col">
+                        <div class="graphic__item base__item js-slide" data-graphic="6">
+                            <h2 class="graphic__catch">Other Works</h2>
+                            <p>Case Studies</p>
+                            <div class="base__img"><img src="./img/w7.png" alt=""></div>
+                        </div>
+                        <div class="graphic__item base__item js-slide" data-graphic="7">
+                            <h2 class="graphic__catch">HQ BMTC</h2>
+                            <p>Shirt Design</p>
+                            <div class="base__img"><img src="./img/g07-sdf/sdf-thumb.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </article>
-          <article id="item3-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1>InSight</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">การศึกษา</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Education</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">นิสิต</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Student</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">ออกเเบบเว็บไซต์</h4>
-                            <h4 class="th">ออกเเบบเพื่อการเข้าถึง</h4>
-                            <h4 class="th">ทิศทางเเละภาพลักษณ์เเบรนด์</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Web Design</h4>
-                            <h4 class="en">Accessibility</h4>
-                            <h4 class="en">Creative Direction</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <a class="link-button" href="https://yosapat2k.github.io/InSight/">
-                                <h3 class="th">เข้าชมเว็บไซต์</h3>
-                                <h3 class="en">Live Site</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-content">
-                    <div class="items-content-info">
-                        <div class="items-content-info-A">
-                            <h2 class="th">
-                                เข้าใจตาบอดสีเพื่อสังคมที่ดีกว่า
-                            </h2>
-                            <h2 class="en">
-                                Interactives for Colorblind Awareness.
-                            </h2>
-                        </div>
-                        <div class="items-content-info-B">
-                            <h4 class="th">
-                                โครงการออกเเบบเพื่อให้ความรู้เพื่อส่งเสริมความเข้าใจภาวะตาบอดสีในสังคมผ่านสื่อเชิงโต้ตอบ
-                            </h4>
-                            <h4 class="en">
-                               Interactive web project promoting awareness on colorblind people.
-                            </h4>
-                        </div>
-                    </div>
-                    <img class="projectimg" src="img/in2.jpg">
-                    <img class="projectimg" src="img/in1.jpg">
-                </div>
-            </div>
-          </article>
-          <article id="item4-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1>Danfit Offshore</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">เช่าของ</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Rental</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">นักออกเเบบ</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Graphic Designer</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">ออกเเบบสัญลักษณ์</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Creative Direction</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-content">
-                    <img class="projectimg" src="img/dd2.png">
-                    <img class="projectimg" src="img/dd1.png">
-                    <img class="projectimg" src="img/dd3.jpg">
-                </div>
-            </div>
-          </article>
-          <article id="item5-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1>Potato Almanac</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">บันเทิง</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Entertainment</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">คอนเทนครีเอเตอร์</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Content Creator</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">ตัดต่อวิดีโอ</h4>
-                            <h4 class="th">เขียนสคริป</h4>
-                            <h4 class="th">ภาษาอังกฤษ</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Video Editing</h4>
-                            <h4 class="en">Creative Direction</h4>
-                            <h4 class="en">English Speaking</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <a class="link-button" href="https://www.youtube.com/@PotatoAlmanac">
-                                <h3 class="th">เข้าชมเว็บไซต์</h3>
-                                <h3 class="en">Live Site</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-content">
-                    <img class="projectimg" src="img/pa2.jpg">
-                    <img class="projectimg" src="img/pa3.jpg">
-                </div>
-            </div>
-          </article>
-          <article id="item6-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1>Studio Synkai</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">การพิมพ์</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Print</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">ออกเเบบกราฟิก</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Graphic Designer</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">การตลาด</h4>
-                            <h4 class="th">อัตลักษณ์</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Marketing</h4>
-                            <h4 class="en">Creative Direction</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-content">
-                    <div class="items-content-info">
-                        <h2 class="th">
-                            ดูเเลสื่อโฆษณาเเละกราฟิกเพื่อใช้บนเเพลตฟอร์มโซเชียลมีเดียเเละในนิตนสาร Hyperfront
-                        </h2>
-                        <h2 class="en">
-                            Managed designs for marketing materials, graphics and assets for social media and Hyperfront Magazines.
-                        </h2>
-                    </div>
-                    <img class="projectimg" src="img/snk2.jpg">
-                    <img class="projectimg" src="img/snk1.jpg">
-                    <div class="items-content-info">
-                        <h2 class="th">
-                            นอกจากนี้ ยังได้ช่วยในการจัดเรียงบทความเเละบทพูดในหน้ามังงะที่เผยเเพร่ในนิตยสาร
-                        </h2>
-                        <h2 class="en">
-                            Also typeset prints for publishing on magazines.
-                        </h2>
-                    </div>
-                    <img class="projectimg" src="img/snk3.jpg">
-                    <img class="projectimg" src="img/snk4.jpg">
-                </div>
-            </div>
-          </article>
-          <article id="item7-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1>HoYostans</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">บันเทิง</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Entertainment</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">ออกเเบบเว็บ</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Web Designer</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">ออกเเบบเว็บไซต์</h4>
-                            <h4 class="th">ดูเเลเว็บไซต์</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Web Design</h4>
-                            <h4 class="en">Web Management</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <a class="link-button" href="https://hoyostans.be/">
-                                <h3 class="th">เข้าชมเว็บไซต์</h3>
-                                <h3 class="en">Live Site</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-content">
-                    <div class="items-content-info">
-                        <h2 class="th">
-                            พัฒนาเเละให้คำเเนะนำเว็บไซต์ในเรื่องการจัดวางองค์ประกอบเเละการใช้งาน เเละก็ช่วยในการดูเเลเว็บไซต์บน Wordpress
-                        </h2>
-                        <h2 class="en">
-                            Lead the conceptualization redesign publishing and ensured smooth operation of the website on Wordpress.
-                        </h2>
-                    </div>
-                    <img class="projectimg" src="img/hys1.jpg">
-                    <img class="projectimg" src="img/hys2.jpg">
-                </div>
-            </div>
-          </article>
-          <article id="item8-info" class="items-info">
-            <div class="items-container">
-                <div class="items-wrapper">
-                    <h1 class="th">ชุมชนบ้านเก่าริมน้ําประแส</h1>
-                    <h1 class="en">Prasae Old Village Community Enterprise</h1>
-                    <div class="items-header">
-                        <div class="items-header-div">
-                            <h3 class="th">สายงาน</h3>
-                            <h4 class="th">การค้า</h4>
-                            <h3 class="en">Industry</h3>
-                            <h4 class="en">Business</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ตำเเหน่ง</h3>
-                            <h4 class="th">ออกเเบบกราฟิก</h4>
-                            <h3 class="en">My Role</h3>
-                            <h4 class="en">Graphic Designer</h4>
-                        </div>
-                        <div class="items-header-div">
-                            <h3 class="th">ประเภทงาน</h3>
-                            <h4 class="th">อัตลักษณ์</h4>
-                            <h3 class="en">Deliverables</h3>
-                            <h4 class="en">Creative Direction</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-content">
-                    <img class="projectimg" src="img/uni1.png">
-                </div>
-            </div>
-          </article>
         </section>
     </div>
-    <main class="main">
-        <header class="topbar">
-            <div class="topbar-container">
-                <div class="topbar-item">
-                    <h3 class="th">ยศพัทธ์ ลิมเรืองรอง</h3>
-                    <h3 class="en">Yosapat Limruangrong</h3>
-                    <h4>yosapatlim@gmail.com</h4>
+    <div class="item" data-item-base>
+        <div class="item__exit" data-item-close></div>
+        <div class="item__inner" data-item-window>
+            <div class="item__content" webdev-item="1">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Aegis Property</h2>
+                        <a href="https://aegis-property.com/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>A real estate listing site where I created a custom CMS that allowed non-technical personnel to
+                            easily make changes to the listing on the website which made inputting content really fast and convenient.
+                            These listings can be accessed using the search bar that dynamically query posts. 
+                        </p>
+                        <img src="./img/w01-aegis/ag1.jpg" alt="">
+                        <p>Users experience was a priority as they get a very clear pictures of where each project is located with a dynamically updated map which
+                            can also be filtered through a price range. The website has multilingual support which was also custom-made to suit the project needs.
+                        </p>
+                        <img src="./img/w01-aegis/ag2.jpg" alt="">
+                    </div>
                 </div>
-                <div class="topbar-item">
-                    <h3 class="th">นักออกเเบบกราฟิก</h3>
-                    <h4 class="th">อ.เมือง, จ.ชลบุรี</h4>
-                    <h3 class="en">Graphic Desinger</h3>
-                    <h4 class="en">Chonburi, Thailand</h4>
-                </div>
-                <div class="topbar-item">
-                    <div class="switch">
-                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" autocomplete="off">
-                        <label for="language-toggle"></label>
-                        <span class="on">TH</span>
-                        <span class="off">EN</span>
-                      </div>
+                
+            </div>
+            <div class="item__content" webdev-item="2">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Global Top Group Website</h2>
+                        <a href="https://globaltopgroup.com/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>I took charge of the redesign and implementation of an unoptimized company's subsidiary website.
+                            It was a Wordpress website that ran on a bloated theme setup and badly configured plugins.
+                            It had poor responsiveness on many screen size, and its bloated size were causing issues during backups.
+                            My solution was to create a custom lightweight theme that resulted in a much faster loading speed
+                            and a cleaner architecture that cuts down on storage space, solving the storage issues.
+                        </p>
+                        <img src="./img/w02-gtg/webdev5-thumb.jpg" alt="Global Top Group">
+                        <p>The main function of the website was to be show the company's real estate catalog
+                            as they are a developer company. Many improvements have been made on each project's page that lead to better user experience
+                            which was tested extensively prior to deployment with easy navigation for quick access to important information about a project.
+                        </p>
+                        <img src="./img/w02-gtg/gtg1.jpg" alt="Global Top Group">
+                    </div>
                 </div>
             </div>
-        </header>
-        <div class="workdisplay">
-            <section class="workcol">
-                <article class="work topic1">
-                    <div class="work-title th">HQ BMTC, ออกเเบบเสื้อ</div>
-                    <div class="work-title en">HQ BMTC, Shirt Design</div>
-                    <img class="workimg" src="img/w6.jpg">
-                </article>
-                <article class="work topic2">
-                    <div class="work-title th">Villa Forest, โมชั่นกราฟิก</div>
-                    <div class="work-title en">Villa Forest, Motion Graphic</div>
-                    <video class="workimg" src="img/vid1.mp4" preload="auto" loop="" autoplay muted>
-                </article>
-                <article class="work-null">
-                    <div class="work-title">Case Study</div>
-                    <img class="workimg" src="img/w7.png">
-                </article>
-            </section>
-            <section class="workcol">
-                <article class="work topic3">
-                    <div class="work-title th">InSight, เว็บไซต์เชิงโต้ตอบ</div>
-                    <div class="work-title en">InSight, Interactive Website</div>
-                    <video class="workimg" src="img/vid3.mp4" preload="auto" loop="" autoplay muted>
-                </article>
-                <article class="work topic4">
-                    <div class="work-title th">Danfit Offshore, ออกเเบบสัญลักษณ์</div>
-                    <div class="work-title en">Danfit Offshore, Logo Design</div>
-                    <img class="workimg" src="img/w1.jpg">
-                </article>
-                <article class="work topic5">
-                    <div class="work-title">Potato Almanac, Content Creation</div>
-                    <img class="workimg" src="img/pa1.jpg">
-                </article>
-                <article class="work topic8">
-                    <div class="work-title th">ชุมชนบ้านเก่าริมน้ําประแส, ออกเเบบสัญลักษณ์</div>
-                    <div class="work-title en">Prasae Community Enterprise, Logo Design</div>
-                    <img class="workimg" src="img/uni2.jpg">
-                </article>
-            </section>
-            <section class="workcol">
-                <article class="work topic6">
-                    <div class="work-title th">Studio Synkai, ออกเเบบกราฟิก</div>
-                    <div class="work-title en">Studio Synkai, Graphic Design</div>
-                    <img class="workimg" src="img/w2.jpg">
-                </article>
-                <article class="work topic7">
-                    <div class="work-title th">HoYostans, ออกเเบบ/ดูเเลเว็บไซต์</div>
-                    <div class="work-title en">HoYostans, Web Design/Management</div>
-                    <video class="workimg" src="img/vid2.mp4" preload="auto" loop="" autoplay muted>
-                </article>
-            </section>
+            <div class="item__content" webdev-item="3">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Interactive Presentation</h2>
+                        <a href="https://profile.globaltopgroup.com/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>There was a demand for something that the company's sales personnel could use to quickly present information in a professional manner.
+                            The idea was an interactive map that displays the location company's project and its nearby ammenities to help facilitate sales presentation.
+                            It serves as a bridge between traditionally on-site print materials and on-demand repository of sales information.
+                        </p>
+                        <img src="./img/w03-map/map1.jpg" alt="">
+                        <img src="./img/w03-map/map2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" webdev-item="4">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Marina Golden Bay Landing Page</h2>
+                        <a href="https://marinagoldenbay.globaltopgroup.com/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>Apart from its project page in the main Global Top Group website, there was a demand for a high-converting landing Page
+                            for each projects that would be used in a Google Ads campaign. As many competitors websites were static images after images I believed the
+                            correct approach needed for this website to stand out was to go with a minimalist design with subtle animations,
+                            in order to appear more professional and ultimately get conversions.
+                        </p>
+                        <img src="./img/w04-mgb/mgb-thumb.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" webdev-item="5">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>HoYostans</h2>
+                        <a href="https://hoyostans.be/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>One of the side project I was a part of was the design, publishing, and maintenance of a community run game wiki,
+                            ensuring smooth operations while cooperating with team members on various issues.
+                        </p>
+                        <img src="./img/w05-hys/hys1.jpg" alt="">
+                        <img src="./img/w05-hys/hys2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" webdev-item="6">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Project InSight</h2>
+                        <a href="https://yosapat2k.github.io/InSight/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>A thesis project to promote colorblind awareness in Thai society.
+                            This project was focused on shining light on the prevalent misunderstanding in how color'blind' people percieve
+                            the world around them along with the difficulty that comes with it.
+                        </p>
+                        <img src="./img/w06-ins/in3.jpg" alt="">
+                        <p>To achieve this. I employed an interactive website medium with challenges and little interactions
+                            to convey the message and simulate the experience of having Color Vision Deficiency better
+                            than using traditional mediums like print.
+                        </p>
+                        <img src="./img/w06-ins/in1.jpg" alt="">
+                        <img src="./img/w06-ins/in2.jpg" alt="">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" seo-item="1">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Global Top Group</h2>
+                        <a href="https://globaltopgroup.com/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>Before working on the website Global Top Group, it had major glaring issues such as,
+                            bloated theme leading to slow loading speed, poor responsive ui, and a miscongifured sitemap.
+                            Fixing everything lead to a roughly 200% in traffic.
+                        </p>
+                        <img src="./img/s01-gtg/t1.jpg" alt="Global Top Group">
+                        <p>A big contributor was a sitemap that didn't account for the multilingual structure of the website,
+                            leading to incorrect indexing by Google which affects the peromance of the website. By replacing it,
+                            it lead to the increase in views and impressions as shown in the image.
+                        </p>
+                        <img src="./img/s01-gtg/t2.jpg" alt="Global Top Group">
+                        <p>As the website ran on Wordpress, I was able to leverage its CMS system which was modified to fit the needs of the company.
+                            This includes a custom-made multilingual function that allows easy linking of posts in different languages that also streamlines
+                            the process of setting up appropriate metatags.
+                        </p>
+                        <img src="./img/s01-gtg/gtg1.jpg" alt="Global Top Group">
+                        <img src="./img/s01-gtg/gtg2.jpg" alt="Global Top Group">
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" seo-item="2">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Viva Wellness</h2>
+                        <a href="https://vivawellness.co.th/" hreflang="th">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <p>A wellness clinic I worked on SEO for. Traffic roughly doubled within two months after
+                            many changes are made such as reworking the home page, new sitemap, restructuring blogs,
+                            and fixing indexing issues.
+                        </p>
+                        <img src="./img/s02-viva/vv1.jpg" alt="Viva Wellness">
+                        <img src="./img/s02-viva/vv2.jpg" alt="Viva Wellness">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item__content" graphic-item="1">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Studio SYNKAI</h2>
+                    </div>
+                    <div class="item__info">
+                        <p>A community project I was a part of. My work included mangaing designs, marketing materials,
+                            graphics, typesetting, and assets for the studio's social media and its publication Hyperfront Magazines.
+                        </p>
+                        <img src="./img/g01-synkai/snk2.jpg" alt="">
+                        <img src="./img/g01-synkai/snk1.jpg" alt="">
+                        <img src="./img/g01-synkai/snk3.jpg" alt="">
+                        <img src="./img/g01-synkai/snk4.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item__content" graphic-item="2">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Potato Alamanac</h2>
+                    </div>
+                    <div class="item__info">
+                        <p>I run a YouTube channel with more than 10,000 subscribers. Here, I hone my skills on many things like video editing, and motion graphics.
+                            The videos of this channel is made in English exclusively which is a testament to my skill level in the English language.
+                        </p>
+                        <img src="./img/g02-pa/pa2.jpg" alt="">
+                        <img src="./img/g02-pa/pa3.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item__content" graphic-item="3">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Danfit Offshore</h2>
+                    </div>
+                    <div class="item__info">
+                        <img src="./img/g03-dd/dd1.png" alt="">
+                        <img src="./img/g03-dd/dd2.png" alt="">
+                        <img src="./img/g03-dd/dd3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" graphic-item="4">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Villa Forest</h2>
+                    </div>
+                    <div class="item__info">
+                        <div class="projectvid"><iframe src="https://drive.google.com/file/d/1o_y7jFyxnItuIg8jo5Qn5bRic3o4w0-4/preview"></iframe></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" graphic-item="5">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Prasae Old Village Community Enterprise</h2>
+                    </div>
+                    <div class="item__info">
+                        <img src="./img/g05-prasae/uni1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" graphic-item="6">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Other works</h2>
+                    </div>
+                    <div class="item__info">
+                        <div class="base__img"><img src="./img/w7.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" graphic-item="7">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>HQ BMTC</h2>
+                    </div>
+                    <div class="item__info">
+                        <img src="./img/g07-sdf/sdf1.png" alt="">
+                        <img src="./img/g07-sdf/sdf2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr class="divider">
+    </div>
+    <hr class="divider">
         <footer>
-            <h2 class="th">ยศพัทธ์ ลิมเรืองรอง</h2>
-            <h2 class="en">Yosapat Limruangrong</h2>
-            <div class="contact">
-                <a class="th" href="https://drive.google.com/file/d/18lfbLi-aRUpXc-bpkeQkT6EiCWyFMrdx/view?usp=sharing">
-                    <h4>เรซูเม่</h4>
-                </a>
-                <a class="en" href="https://drive.google.com/file/d/1GoLUkbdTj8mOsgvcRRaMWBaQaF_V2Exe/view?usp=sharing">
-                    <h4>Resume</h4>
-                </a>
-                <a href="mailto:yosapatlim@gmail.com?subject=Website%20Inquiry">
-                    <h4 class="th">อีเมลล์</h4>
-                    <h4 class="en">Email</h4>
-                </a>
-                <a href="https://www.linkedin.com/in/yosapat-limruangrong-1191691b9/">
-                    <h4>LinkedIn</h4>
-                </a>
+            <div class="footer__inner">
+                <h2>Yosapat Limruangrong</h2>
+                <div class="footer__contact">
+                    <a href="https://drive.google.com/file/d/1GoLUkbdTj8mOsgvcRRaMWBaQaF_V2Exe/view?usp=sharing">Resume</a>
+                    <a href="mailto:yosapatlim@gmail.com?subject=Website%20Inquiry">Email</a>
+                    <a href="https://www.linkedin.com/in/yosapat-limruangrong-1191691b9/">LinkedIn</a>
+                </div>
             </div>
         </footer>
-    </main>
-    
-    
 </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    const removeClassFromOneElement = (target) => {
-            target = target || document.querySelector('.item-content')
-            const allElements = target.querySelectorAll('*')
-            allElements.forEach(el => el.classList.remove('show2'))
-          }
-</script>
-<script defer type="module" src="main.js"></script> 
+<script defer type="module" src="./assets/js/jquery-4.0.0.min.js"></script> 
+<script defer type="module" src="./assets/js/script.js"></script> 
