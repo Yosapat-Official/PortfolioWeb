@@ -286,7 +286,7 @@ body:not(.is-fv):not(.is-cform) .gnav {
 	}
 }
 .gnav__inner {
-    height: min(calc(64/ var(--vw-min) * 100vw), 64px);
+    height: min(calc(96/ var(--vw-min) * 100vw), 96px);
     align-items: center;
     background-color: var(--bg-primary);
 }
