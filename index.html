@@ -9,6 +9,8 @@
     <meta name="author" content="Yosapat Limruangrong">
     <title>YosapatLim | Designer</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/js/PhotoSwipe-5.4.4/dist/photoswipe.css" media="all">
+    <script type="text/javascript" src="./assets/project-data.js"></script>
     <style>
         @font-face {
             font-family: 'EN-Font';
@@ -16,146 +18,190 @@
             font-style: normal;
             font-weight: 100 900;
         }
+        @font-face {
+            font-family: 'TH-Font';
+            src: url('./assets/fonts/Prompt-Regular.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'TH-Font';
+            src: url('./assets/fonts/Prompt-Medium.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'TH-Font';
+            src: url('./assets/fonts/Prompt-SemiBold.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 600;
+        }
+        @font-face {
+            font-family: 'TH-Font';
+            src: url('./assets/fonts/Prompt-Bold.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 700;
+        }
     </style>
 </head>
 <body id="top">
     <header>
         <div class="gnav">
             <nav class="gnav__inner">
-                <h1 class="gnav__item gnav__title">Yosapat Limruangrong</h1>
-                <p class="gnav__item gnav__text1">Web Developer / Designer</p>
-                <p class="gnav__item gnav__text2">Chonburi, Thailand</p>
-                <div class="gnav__exit" data-item-close>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                        <polygon points="100 18.73 81.27 0 50 31.27 18.73 0 0 18.73 31.27 50 0 81.27 18.73 100 50 68.73 81.27 100 100 81.27 68.73 50 100 18.73"/>
-                    </svg>
+                <div class="gnav__content">
+                    <span class="gnav__text" data-lang="en">
+                        <h1 class="gnav__item gnav__title">Yosapat Limruangrong</h1>
+                        <p class="gnav__item gnav__text1">Web Developer / Designer</p>
+                        <p class="gnav__item gnav__text2">Pattaya City, Thailand</p>
+                    </span>
+                    <span class="gnav__text" data-lang="th">
+                        <h1 class="gnav__item gnav__title">ยศพัทธ์ ลิมเรืองรอง</h1>
+                        <p class="gnav__item gnav__text1">พัฒนาเว็บ / กราฟิก</p>
+                        <p class="gnav__item gnav__text2">พัทยา, ชลบุรี</p>
+                    </span>
+                    <div class="gnav__exit" data-item-close>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <polygon points="100 18.73 81.27 0 50 31.27 18.73 0 0 18.73 31.27 50 0 81.27 18.73 100 50 68.73 81.27 100 100 81.27 68.73 50 100 18.73"/>
+                        </svg>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
+    <button class="lang-toggle">
+        <img loading="lazy" src="EN.webp">
+    </button>
     <div id="fullWrap">
         <div class="sticky-sentinel"></div>
-        <section id="webdev" class="webdev sections">
-            <div class="webdev__inner">
-                <h2 class="webdev__title">Website Development</h2>
-                <div class="webdev__content">
-                    <div class="base__col">
-                        <div class="webdev__item base__item js-slide" data-webdev="1">
-                            <h2 class="webdev__catch">Aegis Property Website</h2>
-                            <p>Real Estate Listing</p>
-                            <div class="base__img">
-                                <video src="img/w01-aegis/aegis.mp4" preload="auto" loop="" autoplay muted></video>
-                            </div>
-                        </div>
-                        <div class="webdev__item base__item js-slide" data-webdev="2">
-                            <h2 class="webdev__catch">Global Top Group Website</h2>
-                            <p>Company Website</p>
-                            <div class="base__img"><img src="./img/w02-gtg/webdev5-thumb.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="base__col">
-                        <div class="webdev__item base__item js-slide" data-webdev="3">
-                            <h2 class="webdev__catch">Global Top Group</h2>
-                            <p>Interactive Presentation</p>
-                            <div class="base__img"><img src="./img/w03-map/webdev3-thumb.jpg" alt=""></div>
-                        </div>
-                        <div class="webdev__item base__item js-slide" data-webdev="4">
-                            <h2 class="webdev__catch">Marina Golden Bay</h2>
-                            <p>Landing Page</p>
-                            <div class="base__img">
-                                <video src="img/w04-mgb/mgb.mp4" preload="auto" loop="" autoplay muted></video>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base__col">
-                        <div class="webdev__item base__item js-slide" data-webdev="5">
-                            <h2 class="webdev__catch">HoYostans</h2>
-                            <p>Web Design/Management</p>
-                            <div class="base__img">
-                                <video src="img/vid2.mp4" preload="auto" loop="" autoplay muted>
-                            </div>
-                        </div>
-                        <div class="webdev__item base__item js-slide" data-webdev="6">
-                            <h2 class="webdev__catch">Project InSight</h2>
-                            <p>Campaign Website</p>
-                            <div class="base__img">
-                                <video src="img/w06-ins/vid3.mp4" preload="auto" loop="" autoplay muted>
-                            </div>
-                        </div>
-                    </div>
+        <section id="projects" class="projects-gallery reveal">
+            <div class="projects-header">
+              <div style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 10px;
+                  flex-wrap: wrap;
+                ">
+                <div class="col-slider-wrap visible" id="col-slider-wrap">
+                  <span id="col-slider-inner" style="display: flex; align-items: center; gap: 0.55rem;">
+                    <span class="col-slider-label" data-lang="en">Columns</span>
+                    <span class="col-slider-label" data-lang="th" style="display: none;">คอลลั่ม</span>
+                    <input type="range" id="col-slider" min="3" max="5" value="3" step="1" style="--slider-pct: 0%;">
+                    <span class="col-slider-value" id="col-slider-value">3</span>
+                    <span class="col-slider-divider"></span>
+                  </span>
+                  <span class="col-slider-label" data-lang="en">Per page</span>
+                  <span class="col-slider-label" data-lang="th" style="display: none;">ต่อหน้า</span>
+                  <input type="range" id="page-slider" min="3" max="15" value="12" step="3" style="--slider-pct: 75%;">
+                  <span class="col-slider-value" id="page-slider-value">12</span>
                 </div>
+              </div>
             </div>
-        </section>
-        <section id="seo" class="seo sections">
-            <div class="seo__inner">
-                <h2 class="seo__title">Search Engine Optimization</h2>
-                <div class="seo__content">
-                    <div class="base__col">
-                        <div class="seo__item base__item js-slide" data-seo="1">
-                            <h2 class="seo__catch">Global Top Group</h2>
-                            <div class="base__img"><img src="./img/s01-gtg/s1-gtg1.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="base__col">
-                        <div class="seo__item base__item js-slide" data-seo="2">
-                            <h2 class="seo__catch">Viva Wellness</h2>
-                            <div class="base__img"><img src="./img/s02-viva/viva-thumb.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="base__col"></div>
-                </div>
+            <div class="filters filter-button-group">
+              <ul>
+                <span data-lang="en">
+                    <li class="active" data-filter="*">
+                        <a href="javascript:void(0);">All</a>
+                    </li>
+                    <li data-filter="Webdev">
+                        <a href="javascript:void(0);">Website</a>
+                    </li>
+                    <li data-filter="Seo">
+                        <a href="javascript:void(0);">SEO</a>
+                    </li>
+                    <li data-filter="Graphic">
+                        <a href="javascript:void(0);">Graphic</a>
+                    </li>
+                </span>
+                <span data-lang="th" style="display: none;">
+                    <li class="active" data-filter="*">
+                        <a href="javascript:void(0);">ทั้งหมด</a>
+                    </li>
+                    <li data-filter="Webdev">
+                        <a href="javascript:void(0);">เว็บไซต์</a>
+                    </li>
+                    <li data-filter="Seo">
+                        <a href="javascript:void(0);">SEO</a>
+                    </li>
+                    <li data-filter="Graphic">
+                        <a href="javascript:void(0);">กราฟิก</a>
+                    </li>
+                </span>
+              </ul>
             </div>
-        </section>
-        <section id="graphic" class="graphic sections">
-            <div class="graphic__inner">
-                <h2 class="graphic__title">Graphic Design and Video</h2>
-                <div class="graphic__content">
-                    <div class="base__col">
-                        <div class="graphic__item base__item js-slide" data-graphic="1">
-                            <h2 class="graphic__catch">Studio SYNKAI</h2>
-                            <p>Artwork and Graphic Creation</p>
-                            <div class="base__img"><img src="./img/w2.jpg" alt=""></div>
-                        </div>
-                        <div class="graphic__item base__item js-slide" data-graphic="2">
-                            <h2 class="graphic__catch">Potato Almanac</h2>
-                            <p>Video Content Creation</p>
-                            <div class="base__img"><img src="./img/g02-pa/pa1.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="base__col">
-                        <div class="graphic__item base__item js-slide" data-graphic="3">
-                            <h2 class="graphic__catch">Danfit Offshore</h2>
-                            <p>Logo Design</p>
-                            <div class="base__img"><img src="./img/g03-dd/dd-thumb.jpg" alt=""></div>
-                        </div>
-                        <div class="graphic__item base__item js-slide" data-graphic="4">
-                            <h2 class="graphic__catch">Villa Forest</h2>
-                            <p>Video Motion Graphic</p>
-                            <p></p>
-                            <div class="base__img">
-                                <video src="img/vid1.mp4" preload="auto" loop="" autoplay muted></video>
-                            </div>
-                        </div>
-                        <div class="graphic__item base__item js-slide" data-graphic="5">
-                            <h2 class="graphic__catch">Prasae Old Village Community Enterprise</h2>
-                            <p>Logo Design</p>
-                            <div class="base__img"><img src="./img/g05-prasae/uni2.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="base__col">
-                        <div class="graphic__item base__item js-slide" data-graphic="6">
-                            <h2 class="graphic__catch">Other Works</h2>
-                            <p>Case Studies</p>
-                            <div class="base__img"><img src="./img/w7.png" alt=""></div>
-                        </div>
-                        <div class="graphic__item base__item js-slide" data-graphic="7">
-                            <h2 class="graphic__catch">HQ BMTC</h2>
-                            <p>Shirt Design</p>
-                            <div class="base__img"><img src="./img/g07-sdf/sdf-thumb.jpg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="search-wrap">
+              <div class="search-inner">
+                <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"></circle>
+                  <line x1="12.5" y1="12.5" x2="17" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+                </svg>
+                <input type="text" id="project-search" placeholder="Search projects…" autocomplete="off" spellcheck="false">
+                <button class="search-clear" id="search-clear" aria-label="Clear search">
+                  ✕
+                </button>
+              </div>
             </div>
+    
+            <div class="isotope" id="container">
+    
+            </div>
+    
+            <script type="text/javascript">
+              (function () {
+                const container = document.getElementById("container");
+                const corners =
+                  '<span class="corner-dot top-left"></span>' +
+                  '<span class="corner-dot top-right"></span>' +
+                  '<span class="corner-dot bottom-left"></span>' +
+                  '<span class="corner-dot bottom-right"></span>';
+                projectsData.forEach(function (p) {
+                  const descEn = p.en_desc
+                    ? '<p class="overlay-desc" data-lang="en">' + p.en_desc + "</p>"
+                    : "";
+                  const descTh = p.th_desc
+                    ? '<p class="overlay-desc" data-lang="th">' + p.th_desc + "</p>"
+                    : "";
+                  const html =
+                    (p.filter === "GraphicImage"
+                    ? '<div class="grid-item" data-filter="' + p.filter + '" ' + p.dataType + ' >' +
+                        '<a class="popupimg" href="' +
+                        p.href +
+                        '"' +
+                        ' data-pswp-width="' +
+                        p.pswidth +
+                        '"' +
+                        ' data-pswp-height="' +
+                        p.psheight +
+                        '">' +
+                        '<img loading="lazy" data-src="' +
+                        p.src +
+                        '" />' +
+                        "</a>"
+                    :  '<div class="grid-item js-slide" data-filter="' + p.filter + '" ' + p.dataType + ' >' +
+                    '<img loading="lazy" data-src="' +
+                        p.src +
+                        '" />') +
+                    '<div class="overlay">' +
+                    '<span data-lang="en">' +
+                    p.en +
+                    "</span>" +
+                    descEn +
+                    '<span data-lang="th">' +
+                    p.th +
+                    "</span>" +
+                    descTh +
+                    "</div>" +
+                    // corners +
+                    "</div>";
+                  container.insertAdjacentHTML("beforeend", html);
+                });
+              })();
+            </script>
+            <div class="search-no-results" id="search-no-results">
+              No projects match your search.
+            </div>
+            <div id="timeline-container"></div>
+            <div class="isotope-pager" style="padding-top: 15px; text-align: center"></div>
         </section>
     </div>
     <div class="item" data-item-base>
@@ -165,18 +211,37 @@
                 <div class="item__body">
                     <div class="item__head">
                         <h2>Aegis Property</h2>
-                        <a href="https://aegis-property.com/" hreflang="en">Link</a>
+                        <a href="https://aegis-property.com/" hreflang="en">
+                            <span data-lang="en">Link</span>
+                            <span data-lang="th">ลิงค์</span>
+                        </a>
                     </div>
                     <div class="item__info">
-                        <p>A real estate listing site where I created a custom CMS that allowed non-technical personnel to
-                            easily make changes to the listing on the website which made inputting content really fast and convenient.
-                            These listings can be accessed using the search bar that dynamically query posts. 
-                        </p>
+                        <span data-lang="en">
+                            <p>A real estate listing site that allowed non-technical personnel to put and modify listings on the website.
+                               Users can use search and filter functions to quickly look up listings with accompanying location displayed
+                               on a map.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>เว็บไซต์ลงประกาศขายอสังหาริมทรัพย์ที่สามารถให้บุคลากรที่ไม่เชี่ยวชาญทางเทคนิคลงและแก้ไขประกาศขายบนเว็บไซต์ได้
+                                ผู้ใช้สามารถใช้ฟังก์ชันค้นหาและกรองข้อมูลเพื่อค้นหาประกาศขายได้อย่างรวดเร็ว ซึ่งประกาศขายพร้อมแสดงตำแหน่งบนแผนที่
+                            </p>
+                        </span>
                         <img src="./img/w01-aegis/ag1.jpg" alt="">
-                        <p>Users experience was a priority as they get a very clear pictures of where each project is located with a dynamically updated map which
-                            can also be filtered through a price range. The website has multilingual support which was also custom-made to suit the project needs.
-                        </p>
+                        <span data-lang="en">
+                            <p>User experience was a priority with the inclusion of a dynamically updated map displaying the currently
+                                quried listings which can also be filtered through a price range.
+                                The website also comes with multilingual support which was also custom-made to suit the project needs.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>ประสบการณ์ของผู้ใช้เป็นสิ่งสำคัญ โดยมีการเพิ่มแผนที่ที่อัปเดตแบบไดนามิกแสดงรายการที่กำลังค้นหาอยู่ในปัจจุบัน ซึ่งสามารถกรองตามช่วงราคาได้ด้วย
+                                เว็บไซต์ยังรองรับหลายภาษา ซึ่งได้รับการออกแบบเป็นพิเศษเพื่อให้เหมาะกับความต้องการของโครงการ
+                            </p>
+                        </span>
                         <img src="./img/w01-aegis/ag2.jpg" alt="">
+                        <img src="./img/w01-aegis/ag3.jpg" alt="">
                     </div>
                 </div>
                 
@@ -184,36 +249,97 @@
             <div class="item__content" webdev-item="2">
                 <div class="item__body">
                     <div class="item__head">
-                        <h2>Global Top Group Website</h2>
-                        <a href="https://globaltopgroup.com/" hreflang="en">Link</a>
+                        <span data-lang="en">
+                            <h2>Global Top Group Website</h2>
+                        </span>
+                        <span data-lang="th">
+                            <h2>เว็บไซต์ Global Top Group</h2>
+                        </span>
+                        <a href="https://globaltopgroup.com/" hreflang="en">
+                            <span data-lang="en">Link</span>
+                            <span data-lang="th">ลิงค์</span>
+                        </a>
                     </div>
                     <div class="item__info">
-                        <p>I took charge of the redesign and implementation of an unoptimized company's subsidiary website.
-                            It was a Wordpress website that ran on a bloated theme setup and badly configured plugins.
-                            It had poor responsiveness on many screen size, and its bloated size were causing issues during backups.
-                            My solution was to create a custom lightweight theme that resulted in a much faster loading speed
-                            and a cleaner architecture that cuts down on storage space, solving the storage issues.
-                        </p>
-                        <img src="./img/w02-gtg/webdev5-thumb.jpg" alt="Global Top Group">
-                        <p>The main function of the website was to be show the company's real estate catalog
-                            as they are a developer company. Many improvements have been made on each project's page that lead to better user experience
-                            which was tested extensively prior to deployment with easy navigation for quick access to important information about a project.
-                        </p>
+                        <span data-lang="en">
+                            <p>I led the redesign and implementation of a real estate developer subsidiary Wordpress website which had a lot of issues
+                                such as poor responsive design, bloated theme and plugins setup which lead to a massive website that everything
+                                caused problems with the backup system. So I made plans to trim down the website while keeping all its content,
+                                while adding more functionality and optimization to bring it inline with modern web standards.
+                                My solution was to create a custom lightweight theme that resulted in a much faster loading speed
+                                and a cleaner architecture that cuts down on storage space, solving the storage issues.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>ผมได้กำหนดทิศทางการออกเเบบเเละปรับปรุงเว็บไซต์ Wordpress ของบริษัทพัฒนาอสังหาริมทรัพย์แห่งหนึ่ง ที่เว็บมีปัญหาหลายอย่าง เช่น
+                                การออกแบบที่ไม่ตอบสนองต่ออุปกรณ์ต่างๆ ธีมเเละปลั๊กอินที่ตั้งไม่ถูกต้องจนทำให้เว็บไซต์มีขนาดใหญ่เกินจนเกิดปัญหาเวลาสำรองข้อมูล
+                                ผมจึงวางแผนที่จะลดขนาดเว็บไซต์ลงโดยยังคงเนื้อหาทั้งหมดไว้ พร้อมทั้งเพิ่มฟังก์ชันและประสิทธิภาพต่างๆเพื่อให้สอดคล้องกับมาตรฐาน
+                                เว็บปัจจุบัน โดยเเนวทางการแก้ปัญหาของผมคือการทำธีมขึ้นมาเอง ซึ่งจะทำให้เว็บมีความเร็วในการโหลดสูงขึ้นได้
+                                โดยมีโครงสร้างที่ไม่กินที่ซึ่งแก้ปัญหาเรื่องการจัดเก็บข้อมูลได้
+                            </p>
+                        </span>
                         <img src="./img/w02-gtg/gtg1.jpg" alt="Global Top Group">
+                        <span data-lang="en">
+                            <p>To achieve this, I created a custom made lightweight theme that also came with custom plugins to handle extra functionalities
+                                like multilingual support or SEO. This was achieved by combining functionalities from popular plugins like Polylang,
+                                and Yoast SEO that also paywalls their features into a baked in functionality of the website, ensuring less need for
+                                constant maintenance.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>
+                                เเนวทางการทำงานของผม ผมสร้างธีมของขึ้นมาเองที่มาพร้อมกับปลั๊กอินาที่ทำขึ้นมาเพื่อรองรับฟังก์ชันเพิ่มเติม
+                                เช่น การรองรับหลายภาษาหรือ SEO ซึ่งผมรวมฟังก์ชันการทำงานจากปลั๊กอินยอดนิยม เช่น Polylang
+                                และ Yoast SEO ซึ่งมีค่าใช้จ่ายในการใช้งานฟีเจอร์ต่างๆ เข้าไว้ในฟังก์ชันการทำงานของเว็บไซต์ ทำให้ลดความจำเป็นในการ
+                                บำรุงรักษาอย่างต่อเนื่อง
+                            </p>
+                        </span>
+                        
+                        <img src="./img/w02-gtg/gtg2.jpg" alt="Global Top Group">
+                        <span data-lang="en">
+                            <p>The main goal of the website was to be showcase the company's real estate catalog, while giving the perception of
+                                professionalism. Many improvements have been made on each pages that lead to better user experience,
+                                such as the inclusion of a search and filter function on the homepage to help facilitate discovery of various projects
+                                based on customers preferences.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>
+                                เป้าหมายหลักของเว็บไซต์คือการนำเสนอแคตตาล็อกอสังหาริมทรัพย์ของบริษัท พร้อมทั้งสร้างภาพลักษณ์ของความเป็นมืออาชีพ
+                                มีการปรับปรุงหลายอย่างในแต่ละหน้าเพื่อให้ผู้ใช้ได้รับประสบการณ์ที่ดีขึ้น
+                                เช่น การเพิ่มฟังก์ชันการค้นหาและตัวกรองในหน้าแรก เพื่อช่วยอำนวยความสะดวกในการค้นหาโครงการต่างๆ
+                                ตามความต้องการของลูกค้า
+                            </p>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="item__content" webdev-item="3">
                 <div class="item__body">
                     <div class="item__head">
-                        <h2>Interactive Presentation</h2>
-                        <a href="https://profile.globaltopgroup.com/" hreflang="en">Link</a>
+                        <span data-lang="en">
+                            <h2>GTG Interactive Presentation</h2>
+                        </span>
+                        <span data-lang="th">
+                            <h2>GTG สไลด์นำเสนอแบบโต้ตอบ</h2>
+                        </span>
+                        <a href="https://profile.globaltopgroup.com/" hreflang="en">
+                            <span data-lang="en">Link</span>
+                            <span data-lang="th">ลิงค์</span>
+                        </a>
                     </div>
                     <div class="item__info">
-                        <p>There was a demand for something that the company's sales personnel could use to quickly present information in a professional manner.
-                            The idea was an interactive map that displays the location company's project and its nearby ammenities to help facilitate sales presentation.
-                            It serves as a bridge between traditionally on-site print materials and on-demand repository of sales information.
-                        </p>
+                        <span data-lang="en">
+                            <p>Presentation materials for Global Top Group's sales personnel. It displays every project on an interactive map
+                                along with its nearby ammenities to help facilitate sales. It served to replace the traditionally on-site print materials used before this point.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>
+                                เว็บนำเสนอที่สร้างขึ้นให้พนักงานขายของ Global Top Group โดยเว็บแสดงโครงการทุกโครงการบนแผนที่พร้อมสิ่งอำนวยความสะดวกใกล้เคียง
+                                เพื่อช่วยอำนวยความสะดวกในการขาย โดยใช้แทนสิ่งพิมพ์ที่ใช้มาก่อนหน้า
+                            </p>
+                        </span>
                         <img src="./img/w03-map/map1.jpg" alt="">
                         <img src="./img/w03-map/map2.jpg" alt="">
                     </div>
@@ -222,20 +348,150 @@
             <div class="item__content" webdev-item="4">
                 <div class="item__body">
                     <div class="item__head">
-                        <h2>Marina Golden Bay Landing Page</h2>
-                        <a href="https://marinagoldenbay.globaltopgroup.com/" hreflang="en">Link</a>
+                        <span data-lang="en">
+                            <h2>Marina Golden Bay Landing Page</h2>
+                        </span>
+                        <span data-lang="th">
+                            <h2>หน้า Landing Page Marina Golden Bay</h2>
+                        </span>
+                        <a href="https://marinagoldenbay.globaltopgroup.com/" hreflang="en">
+                            <span data-lang="en">Link</span>
+                            <span data-lang="th">ลิงค์</span>
+                        </a>
                     </div>
                     <div class="item__info">
-                        <p>Apart from its project page in the main Global Top Group website, there was a demand for a high-converting landing Page
-                            for each projects that would be used in a Google Ads campaign. As many competitors websites were static images after images I believed the
-                            correct approach needed for this website to stand out was to go with a minimalist design with subtle animations,
-                            in order to appear more professional and ultimately get conversions.
-                        </p>
-                        <img src="./img/w04-mgb/mgb-thumb.jpg" alt="">
+                        <span data-lang="en">
+                            <p>A landing page for one of Global Top Group's project under construction, Marina Golden Bay. Used in a Google Ads campaign.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>หน้า Landing Page สำหรับโครงการที่กำลังก่อสร้างของ Global Top Group ใช้ในแคมเปญโฆษณา Google Ads
+                            </p>
+                        </span>
+                        <img src="./img/w04-mgb/mgb1.jpg" alt="">
+                        <img src="./img/w04-mgb/mgb2.jpg" alt="">
+                        <img src="./img/w04-mgb/mgb3.jpg" alt="">
                     </div>
                 </div>
             </div>
             <div class="item__content" webdev-item="5">
+                <div class="item__body">
+                    <div class="item__head">
+                        <span data-lang="en">
+                            <h2>Harmonia City Garden Landing Page</h2>
+                        </span>
+                        <span data-lang="th">
+                            <h2>หน้า Landing Page Harmonia City Garden</h2>
+                        </span>
+                        <a href="https://harmoniacitygarden.globaltopgroup.com/" hreflang="en">
+                            <span data-lang="en">Link</span>
+                            <span data-lang="th">ลิงค์</span>
+                        </a>
+                    </div>
+                    <div class="item__info">
+                        <span data-lang="en">
+                            <p>A landing page for one of Global Top Group's project under construction, Harmonia City Garden.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>หน้า Landing Page สำหรับโครงการที่กำลังก่อสร้างของ Global Top Group Harmonia City Garden
+                            </p>
+                        </span>
+                        <img src="./img/w05-hcg/hcg1.jpg" alt="">
+                        <img src="./img/w05-hcg/hcg2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" webdev-item="6">
+                <div class="item__body">
+                    <div class="item__head">
+                        <span data-lang="en">
+                            <h2>Lumina Luxury Pool Villa Landing Page</h2>
+                        </span>
+                        <span data-lang="th">
+                            <h2>หน้า Landing Page Lumina Luxury Pool Villa</h2>
+                        </span>
+                        <a href="/" hreflang="en">
+                            <span data-lang="en">Link</span>
+                            <span data-lang="th">ลิงค์</span>
+                        </a>
+                    </div>
+                    <div class="item__info">
+                        <span data-lang="en">
+                            <p>A landing page for one of Global Top Group's newest project, Lumina Luxury Pool Villa.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>หน้า Landing Page สำหรับโครงการใหม่ของ Global Top Group Lumina Luxury Pool Villa
+                            </p>
+                        </span>
+                        <!-- <img src="./img/w05-hcg/hcg1.jpg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" webdev-item="7">
+                <div class="item__body">
+                    <div class="item__head">
+                        <span data-lang="en">
+                            <h2>Love It Wongamat Beach Landing Page</h2>
+                        </span>
+                        <span data-lang="th">
+                            <h2>หน้า Landing Page Love It Wongamat Beach</h2>
+                        </span>
+                        <a href="https://loveitwongamat.globaltopgroup.com/" hreflang="en">
+                            <span data-lang="en">Link</span>
+                            <span data-lang="th">ลิงค์</span>
+                        </a>
+                    </div>
+                    <div class="item__info">
+                        <span data-lang="en">
+                            <p>A landing page for one of Global Top Group's newest project, Love It Wongamat Beach.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>หน้า Landing Page สำหรับโครงการใหม่ของ Global Top Group Love It Wongamat Beach
+                            </p>
+                        </span>
+                        <!-- <img src="./img/w05-hcg/hcg1.jpg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" webdev-item="8">
+                <div class="item__body">
+                    <div class="item__head">
+                        <h2>Project InSight</h2>
+                        <a href="https://yosapat2k.github.io/InSight/" hreflang="en">Link</a>
+                    </div>
+                    <div class="item__info">
+                        <span data-lang="en">
+                            <p>My thesis project about colorblind awareness in Thai society.
+                                It focused on shining light on the prevalent misunderstanding of how thos with colorblindness percieve
+                                the environment and the difficulty that comes with it.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>วิทยานิพนธ์ของผมว่าด้วยเรื่องการสร้างความตระหนักรู้เรื่องตาบอดสีในสังคมไทย
+                                โดยชึ้ให้เห็นความเข้าใจผิดเกี่ยวกับการรับรู้ของผู้ที่มีภาวะตาบอดสีและความยากลำบากที่มาพร้อมกับภาวะดังกล่าว
+                            </p>
+                        </span>
+                        <img src="./img/w08-ins/in3.jpg" alt="">
+                        <span data-lang="en">
+                            <p>To better tell a story, I chose a website rather than traditional mediums like print,
+                                to be able to simulate and immerse people interactions the topic with challenges and little interaction.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>เพื่อให้สามารถเล่าเรื่องได้ดียิ่งขึ้น ผมเลือกใช้เว็บไซต์แทนสื่อทั่วไปอย่าง สื่อสิ่งพิมพ์
+                                เพื่อให้จำลองและสร้างปฏิสัมพันธ์ระหว่างผู้คนกับหัวข้อดังกล่าวด้วยความท้าทายและการมีปฏิสัมพันธ์เพียงเล็กน้อย
+                            </p>
+                        </span>
+                        <img src="./img/w08-ins/in1.jpg" alt="">
+                        <img src="./img/w08-ins/in2.jpg" alt="">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item__content" webdev-item="9">
                 <div class="item__body">
                     <div class="item__head">
                         <h2>HoYostans</h2>
@@ -245,30 +501,8 @@
                         <p>One of the side project I was a part of was the design, publishing, and maintenance of a community run game wiki,
                             ensuring smooth operations while cooperating with team members on various issues.
                         </p>
-                        <img src="./img/w05-hys/hys1.jpg" alt="">
-                        <img src="./img/w05-hys/hys2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="item__content" webdev-item="6">
-                <div class="item__body">
-                    <div class="item__head">
-                        <h2>Project InSight</h2>
-                        <a href="https://yosapat2k.github.io/InSight/" hreflang="en">Link</a>
-                    </div>
-                    <div class="item__info">
-                        <p>A thesis project to promote colorblind awareness in Thai society.
-                            This project was focused on shining light on the prevalent misunderstanding in how color'blind' people percieve
-                            the world around them along with the difficulty that comes with it.
-                        </p>
-                        <img src="./img/w06-ins/in3.jpg" alt="">
-                        <p>To achieve this. I employed an interactive website medium with challenges and little interactions
-                            to convey the message and simulate the experience of having Color Vision Deficiency better
-                            than using traditional mediums like print.
-                        </p>
-                        <img src="./img/w06-ins/in1.jpg" alt="">
-                        <img src="./img/w06-ins/in2.jpg" alt="">
-                        <p></p>
+                        <img src="./img/w09-hys/hys1.jpg" alt="">
+                        <img src="./img/w09-hys/hys2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -279,20 +513,41 @@
                         <a href="https://globaltopgroup.com/" hreflang="en">Link</a>
                     </div>
                     <div class="item__info">
-                        <p>Before working on the website Global Top Group, it had major glaring issues such as,
-                            bloated theme leading to slow loading speed, poor responsive ui, and a miscongifured sitemap.
-                            Fixing everything lead to a roughly 200% in traffic.
-                        </p>
+                        <span data-lang="en">
+                            <p>While working on the Global Top Group website, I was also tasked with fixing glaring issues that plagued
+                                such as slow loading speed, poor responsive UI, and a miscongifured sitemap. Fixing everything lead to a roughly 200% in traffic.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>ในขณะที่ผมกำลังเเก้ไขเว็บไซต์ของ Global Top Group ผทได้แก้ไขปัญหาที่หลายอย่าง เช่น ความเร็วในการโหลดที่ช้า 
+                                UI ที่ตอบสนองได้ไม่ดี และ Sitemap ที่จัดเรียงไม่ถูกต้อง การแก้ไขทุกอย่างส่งผลให้ปริมาณการเข้าชมเพิ่มขึ้นประมาณ 200%
+                            </p>
+                        </span>
                         <img src="./img/s01-gtg/t1.jpg" alt="Global Top Group">
-                        <p>A big contributor was a sitemap that didn't account for the multilingual structure of the website,
-                            leading to incorrect indexing by Google which affects the peromance of the website. By replacing it,
-                            it lead to the increase in views and impressions as shown in the image.
-                        </p>
+                        <span data-lang="en">
+                            <p>A big contributor was a sitemap that didn't account for the multilingual structure of the website,
+                                leading to incorrect indexing by Google which affects the performance of the website. Replacing it,
+                                led to the greatest increase in views and impressions as shown in the image.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>ปัจจัยสำคัญประการหนึ่งคือ Sitemap ที่ไม่ได้คำนึงถึงโครงสร้างหลายภาษาของเว็บไซต์
+                                ซึ่งนำไปสู่การ Index ที่ไม่ถูกต้องโดย Google ซึ่งส่งผลต่อประสิทธิภาพของเว็บไซต์ การแก้ไขแผนผังเว็บไซต์
+                                ส่งผลให้จำนวนการเข้าชมและการแสดงผลเพิ่มขึ้นอย่างมาก ดังแสดงในภาพ
+                            </p>
+                        </span>
                         <img src="./img/s01-gtg/t2.jpg" alt="Global Top Group">
-                        <p>As the website ran on Wordpress, I was able to leverage its CMS system which was modified to fit the needs of the company.
-                            This includes a custom-made multilingual function that allows easy linking of posts in different languages that also streamlines
-                            the process of setting up appropriate metatags.
-                        </p>
+                        <span data-lang="en">
+                            <p>I have created a custom multilingual plugin with its own SEO setting combining popular plugins on the Wordpress marketing
+                                that allowed easy linking of posts in different languages along with setting up appropriate metatags, with non
+                                of the paywall hassles that would happened if the website were to use the typical plugins.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>ผมได้สร้างปลั๊กอินหลายภาษาขึ้นมาเองซึ่งมาพร้อมกับการตั้งค่า SEO ของตัวเอง โดยผสานรวมปลั๊กอินยอดนิยมบนตลาดของ WordPress
+                                ซึ่งช่วยให้สามารถเชื่อมโยงโพสต์ในภาษาต่างๆ ได้อย่างง่ายดาย พร้อมทั้งตั้งค่าเมตาแท็กที่เหมาะสม โดยไม่ต้องคำนึงถึงการจ่ายค่าปลั๊กอิน
+                            </p>
+                        </span>
                         <img src="./img/s01-gtg/gtg1.jpg" alt="Global Top Group">
                         <img src="./img/s01-gtg/gtg2.jpg" alt="Global Top Group">
                     </div>
@@ -305,10 +560,18 @@
                         <a href="https://vivawellness.co.th/" hreflang="th">Link</a>
                     </div>
                     <div class="item__info">
-                        <p>A wellness clinic I worked on SEO for. Traffic roughly doubled within two months after
-                            many changes are made such as reworking the home page, new sitemap, restructuring blogs,
-                            and fixing indexing issues.
-                        </p>
+                        <span data-lang="en">
+                            <p>I roughly doubled the traffic within two months after implementing various changes to their website,
+                                and SEO setup. Reworking the home page, creating new sitemap, restructuring blogs,
+                                and fixing indexing issues.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>ผมทำสถิติการเข้าชมเพิ่มขึ้นได้เกือบเท่าตัวภายในสองเดือนหลังจากได้ทำการเปลี่ยนแปลงต่างๆ บนเว็บไซต์
+                                รวมถึงการตั้งค่า SEO เช่น การปรับปรุงหน้าแรก การสร้าง Sitemap ใหม่ การจัดโครงสร้างบล็อกใหม่
+                                และการแก้ไขปัญหา Indexing
+                            </p>
+                        </span>
                         <img src="./img/s02-viva/vv1.jpg" alt="Viva Wellness">
                         <img src="./img/s02-viva/vv2.jpg" alt="Viva Wellness">
                     </div>
@@ -321,9 +584,15 @@
                         <h2>Studio SYNKAI</h2>
                     </div>
                     <div class="item__info">
-                        <p>A community project I was a part of. My work included mangaing designs, marketing materials,
-                            graphics, typesetting, and assets for the studio's social media and its publication Hyperfront Magazines.
-                        </p>
+                        <span data-lang="en">
+                            <p>A community project I was a part of. My work included mangaing designs, marketing materials,
+                                graphics, typesetting, and assets for the studio's social media and its publication Hyperfront Magazines.
+                            </p>
+                        </span>
+                        <span data-lang="th">
+                            <p>เป็นโครงการจิตอาสาที่ผมได้มีส่วนร่วม ผมมีหน้าที่ออกแบบสื่อการตลาด กราฟิก การเรียงพิมพ์ และเนื้อหาสำหรับโซเชียลมีเดียของสตูดิโอและนิตยสาร Hyperfront Magazines
+                            </p>
+                        </span>
                         <img src="./img/g01-synkai/snk2.jpg" alt="">
                         <img src="./img/g01-synkai/snk1.jpg" alt="">
                         <img src="./img/g01-synkai/snk3.jpg" alt="">
@@ -403,18 +672,40 @@
         </div>
     </div>
     <hr class="divider">
-        <footer>
-            <div class="footer__inner">
+    <footer>
+        <div class="footer__inner">
+            <span data-lang="en">
                 <h2>Yosapat Limruangrong</h2>
-                <div class="footer__contact">
+            </span>
+            <span data-lang="th">
+                <h2>ยศพัทธ์ ลิมเรืองรอง</h2>
+            </span>
+            <div class="footer__contact">
+                <span data-lang="en">
                     <a href="https://drive.google.com/file/d/1GoLUkbdTj8mOsgvcRRaMWBaQaF_V2Exe/view?usp=sharing">Resume</a>
                     <a href="mailto:yosapatlim@gmail.com?subject=Website%20Inquiry">Email</a>
-                    <a href="https://www.linkedin.com/in/yosapat-limruangrong-1191691b9/">LinkedIn</a>
-                </div>
+                </span>
+                <span data-lang="th">
+                    <a href="https://drive.google.com/file/d/18lfbLi-aRUpXc-bpkeQkT6EiCWyFMrdx/view?usp=sharing">เรซูเม่</a>
+                    <a href="mailto:yosapatlim@gmail.com?subject=Website%20Inquiry">อีเมลล์</a>
+                </span>
+                <a href="https://www.linkedin.com/in/yosapat-limruangrong-1191691b9/">LinkedIn</a>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <script type="module">
+        import PhotoSwipeLightbox from './assets/js/PhotoSwipe-5.4.4/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#container',
+          children: 'a.popupimg:not(.isotope-hidden)',
+          showHideAnimationType: 'fade',
+          pswpModule: () => import('./assets/js/PhotoSwipe-5.4.4/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+     </script>
+    <script defer type="module" src="./assets/js/jquery-4.0.0.min.js"></script> 
+    <script type="text/javascript" src="./assets/js/imagesloaded.pkgd.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/isotope.pkgd.min.js" defer></script>
+    <script defer type="module" src="./assets/js/script.js" defer></script> 
 </body>
 </html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script defer type="module" src="./assets/js/jquery-4.0.0.min.js"></script> 
-<script defer type="module" src="./assets/js/script.js"></script> 
