@@ -69,8 +69,8 @@ const THEMES = {
     //   h2Bg: "h2-bg.webp",
     //   hoverVideo: "Lens.webm",
     //   boxImage: "Lens.webp",
-      langEN: "/assets/EN.png",
-      langZH: "/assets/TH.png",
+      langEN: "./assets/EN.png",
+      langZH: "./assets/TH.png",
     }
 }
 
