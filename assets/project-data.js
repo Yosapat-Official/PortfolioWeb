@@ -84,6 +84,18 @@ const projectsData = [
 //     dataType: "data-webdev='7'"
 // },
 {
+    filter: "Webdev",
+    href: "./img/w10-ctn/ctn-thumb.jpg",
+    src: "./img/w10-ctn/ctn-thumb.jpg",
+    en: "Chaithanin Website",
+    th: "เว็บไชยธนินทร์",
+    month: 5,
+    year: 2026,
+    pswidth: 1200,
+    psheight: 1024,
+    dataType: "data-webdev='10'"
+},
+{
     filter: "Seo",
     href: "./img/s01-gtg/gtg-seo.jpg",
     src: "./img/s01-gtg/gtg-seo.jpg",
