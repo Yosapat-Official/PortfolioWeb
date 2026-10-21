@@ -1,18 +1,6 @@
 const projectsData = [
 {
     filter: "Webdev",
-    href: "./img/w01-aegis/ag1.jpg",
-    src: "./img/w01-aegis/ag1.jpg",
-    en: "Aegis Property Website",
-    th: "เว็บไซต์ เอจิส พร็อพเพอร์ตี้",
-    month: 10,
-    year: 2025,
-    pswidth: 1495,
-    psheight: 847,
-    dataType: "data-webdev='1'"
-},
-{
-    filter: "Webdev",
     href: "./img/w02-gtg/gtg-web.png",
     src: "./img/w02-gtg/gtg-web.png",
     en: "Global Top Group Website",
@@ -22,6 +10,18 @@ const projectsData = [
     pswidth: 998,
     psheight: 612,
     dataType: "data-webdev='2'"
+},    
+{
+    filter: "Webdev",
+    href: "./img/w01-aegis/ag1.jpg",
+    src: "./img/w01-aegis/ag1.jpg",
+    en: "Aegis Property Website",
+    th: "เว็บไซต์ เอจิส พร็อพเพอร์ตี้",
+    month: 10,
+    year: 2025,
+    pswidth: 1495,
+    psheight: 847,
+    dataType: "data-webdev='1'"
 },
 {
     filter: "Webdev",
